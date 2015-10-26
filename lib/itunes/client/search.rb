@@ -57,10 +57,6 @@ module ITunes
       search(term, 'software', options)
     end
 
-    def identifier(term, options={})
-      search(term, 'id', options)
-    end
-
     # Performs a ebook search
     # @param [String] term The search term
     # @option options [Symbol]

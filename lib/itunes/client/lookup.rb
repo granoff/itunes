@@ -39,6 +39,13 @@ module ITunes
       perform_lookup('upc', id, options)
     end
 
+    # Performs a lookup request based on a id
+    # @param [String] id
+    # @option options [Symbol]
+    def identifier(id, options={})
+      perform_lookup('id', id, options)
+    end
+
     # Performs a lookup request based on an ISBN
     # @param [String] id
     # @option options [Symbol]
